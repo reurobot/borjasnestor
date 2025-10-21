@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Néstor Borjas - Medicina Física y Rehabilitación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Dr. Néstor Borjas</h1>
+                </div>
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#acerca">Acerca</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#tecnologia">Tecnología</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Acerca -->
+    <section id="acerca" class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="dr.jpeg" alt="Dr. Néstor Borjas">
+                </div>
+                <div class="about-text">
+                    <h2>Sobre el Dr. Néstor Borjas</h2>
+                    <p class="mission">Más de 37 años ayudando a pacientes a recuperar su calidad de vida</p>
+                    <div class="mission-box">
+                        <p>Mi misión es ayudar a cada paciente a alcanzar su máximo potencial funcional, combinando lo mejor de la medicina moderna con un enfoque humano y personalizado.</p>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                Formación Profesional <span class="toggle-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>El Dr. Néstor Borjas es médico cirujano, por más de 37 años, Universidad del Zulia, especialista en medicina física y rehabilitación en el Instituto Nacional de Rehabilitación y Psicofísica (INAREP,) desde hace más de 33 años en Buenos Aires Argentina.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                Trayectoria Académica <span class="toggle-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="education-list">
+                                    <div class="education-item">
+                                        <div>
+                                            <strong>Médico Cirujano</strong> - Universidad Nacional Autónoma de México
+                                        </div>
+                                    </div>
+                                    <div class="education-item">
+                                        <div>
+                                            <strong>Especialidad en Fisiatría</strong> - Instituto Nacional de Rehabilitación
+                                        </div>
+                                    </div>
+                                    <div class="education-item">
+                                        <div>
+                                            <strong>Diplomado en Dolor Crónico</strong> - Universidad de Barcelona
+                                        </div>
+                                    </div>
+                                    <div class="education-item">
+                                        <div>
+                                            <strong>Fellow en Neuro rehabilitación</strong> - Buenos Aires, Argentina
+                                        </div>
+                                    </div>
+                                    <div class="education-item">
+                                        <div>
+                                            <strong>Fellow en Rehabilitación Cardiorespiratoria</strong> - Hospital Italiano, Buenos Aires, Argentina
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                Sociedades a las que Pertenece <span class="toggle-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="education-list">
+                                    <div class="education-item">
+                                        <div>
+                                            <strong>Sociedad Venezolana de Medicina Física y Rehabilitación</strong>
+                                        </div>
+                                    </div>
+                                    <div class="education-item">
+                                        <div>
+                                            <strong>Sociedad Argentina de Medicina del Trabajo</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                Docencia y Formación Académica <span class="toggle-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="education-list">
+                                    <div class="education-item">
+                                        <div>
+                                            <strong>Magíster en Docencia Universitaria</strong> - Universidad Experimental Rafael María Baralt
+                                        </div>
+                                    </div>
+                                    <div class="education-item">
+                                        <div>
+                                            <strong>Docente Universitario nacional e internacionalmente</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Programas Especializados</h2>
+                <p>Tratamientos integrales adaptados a cada necesidad</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Rehabilitación Neurológica</h3>
+                    <p>Programas integrales para pacientes con condiciones neurológicas como:</p>
+                    <ul>
+                        <li>Accidente Cerebrovascular (ACV)</li>
+                        <li>Lesión Medular</li>
+                        <li>Enfermedad de Parkinson</li>
+                        <li>Esclerosis Múltiple</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>Manejo del Dolor Musculoesquelético</h3>
+                    <p>Enfoque multidisciplinario para el tratamiento de:</p>
+                    <ul>
+                        <li>Dolor lumbar crónico</li>
+                        <li>Artrosis y artritis</li>
+                        <li>Fibromialgia</li>
+                        <li>Lesiones deportivas</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>Rehabilitación Postquirúrgica</h3>
+                    <p>Protocolos de recuperación para:</p>
+                    <ul>
+                        <li>Reemplazos articulares</li>
+                        <li>Cirugías de columna</li>
+                        <li>Reconstrucciones ligamentarias</li>
+                        <li>Amputaciones</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cta-container">
+                <a href="#contacto" class="cta-button">Solicitar evaluación personalizada</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnología -->
+    <section id="tecnologia" class="section tech-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tecnología de Vanguardia</h2>
+                <p>Equipos y técnicas de última generación para mejores resultados</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <h3>Diagnóstico Avanzado</h3>
+                    <p>Estudios especializados para evaluación precisa</p>
+                </div>
+
+                <div class="tech-item">
+                    <h3>Tecnología de Vanguardia</h3>
+                    <p>Equipos de última generación para rehabilitación</p>
+                </div>
+
+                <div class="tech-item">
+                    <h3>Monitoreo Continuo</h3>
+                    <p>Seguimiento personalizado del progreso</p>
+                </div>
+
+                <div class="tech-item">
+                    <h3>Innovación Constante</h3>
+                    <p>Actualización continua en técnicas y equipos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Testimonios de Pacientes</h2>
+                <p>Historias reales de transformación y recuperación</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Gracias al Dr. Borjas recuperé mi independencia. Su enfoque integral y profesionalismo marcaron la diferencia en mi recuperación."</blockquote>
+                    <div class="testimonial-author">
+                        <strong>María González</strong>
+                        <span>Rehabilitación post-ACV</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"El programa de rehabilitación superó mis expectativas. Hoy puedo realizar actividades que pensé nunca volvería a hacer."</blockquote>
+                    <div class="testimonial-author">
+                        <strong>Carlos Rodríguez</strong>
+                        <span>Lesión medular</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Por fin encontré un tratamiento efectivo para mi dolor crónico. El Dr. Borjas realmente entiende las necesidades de sus pacientes."</blockquote>
+                    <div class="testimonial-author">
+                        <strong>Ana Martínez</strong>
+                        <span>Fibromialgia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="section blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Blog Médico</h2>
+                <p>Mantente informado sobre los últimos avances en medicina de rehabilitación</p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://picsum.photos/400/250?random=2" alt="Blog post">
+                        <span class="blog-category">Rehabilitación</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>15 Oct 2024</span>
+                            <span>Dr. Néstor Borjas</span>
+                        </div>
+                        <h3>Avances en Rehabilitación Neurológica Post-ACV</h3>
+                        <p>Descubre las últimas técnicas y tecnologías que están revolucionando el tratamiento de pacientes con accidente cerebrovascular...</p>
+                        <a href="#blog-detail" class="read-more">Leer más →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://picsum.photos/400/250?random=3" alt="Blog post">
+                        <span class="blog-category">Prevención</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>10 Oct 2024</span>
+                            <span>Dr. Néstor Borjas</span>
+                        </div>
+                        <h3>Manejo del Dolor Lumbar Crónico</h3>
+                        <p>Estrategias efectivas para prevenir y tratar el dolor lumbar, una de las condiciones más comunes en la población adulta...</p>
+                        <a href="#blog-detail" class="read-more">Leer más →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://picsum.photos/400/250?random=4" alt="Blog post">
+                        <span class="blog-category">Deportes</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>5 Oct 2024</span>
+                            <span>Dr. Néstor Borjas</span>
+                        </div>
+                        <h3>Rehabilitación Deportiva: Recuperación Acelerada</h3>
+                        <p>Protocolos modernos para atletas que buscan volver a la competición de manera segura y eficiente...</p>
+                        <a href="#blog-detail" class="read-more">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cta-container">
+                <a href="#todos-los-articulos" class="cta-button secondary">Ver todos los artículos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Suscríbete a nuestro Newsletter</h2>
+                <p>Recibe las últimas noticias y consejos sobre salud y rehabilitación</p>
+                <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                    <input type="email" placeholder="Tu email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contacto</h2>
+                <p>Agenda tu consulta y comienza tu camino hacia la recuperación</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <strong>Teléfono/WhatsApp</strong>
+                            <p>+58 4246197263</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div>
+                            <strong>Email</strong>
+                            <p>consultas@drborjas.com</p>
+                            <p>citas@drborjas.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div>
+                            <strong>Dirección</strong>
+                            <p>Av. Insurgentes Sur 1234<br>Col. Del Valle, CDMX</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div>
+                            <strong>Horarios</strong>
+                            <p>Lunes a Viernes: 8:00 - 18:00</p>
+                            <p>Sábados: 9:00 - 14:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Envía un Mensaje</h3>
+                    <form onsubmit="sendToWhatsApp(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Describe brevemente tu consulta o condición..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="cta-button">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dr. Néstor Borjas</h3>
+                    <p>Médico especialista en medicina física y rehabilitación</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#acerca">Acerca</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>+52 (55) 1234-5678</p>
+                    <p>consultas@drborjas.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. Néstor Borjas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/584246197263" class="whatsapp-float" target="_blank">
+    <span>📱</span>
+</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
